@@ -4,7 +4,7 @@ Simple examples to demonstrate how to handle browser events in JavaScript
 
 ## Live demos
 
-- [Handling multiples element events with one listener](edysegura.github.io/js-event-handler)
+- [Handling multiples element events with one listener](https://edysegura.github.io/js-event-handler)
 
 ## References
 
