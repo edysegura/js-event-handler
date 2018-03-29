@@ -1,11 +1,12 @@
 #event-bus {
   display: flex;
+  flex-flow: row wrap;
 }
 
 #event-bus div {
   width: 20%;
   border: 1px solid #aaa;
-  margin-right: 5px;
+  margin: 0 5px 5px 0;
   text-align: center;
   cursor: pointer;
 }
