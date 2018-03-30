@@ -1,9 +1,13 @@
 'use strict'
 
-const banner = document.querySelector('div')
+const banner = document.querySelector('.banner')
 const mousePosition = document.querySelector('output')
 
 function moveBanner(event) {
+  banner.style.transform = `
+    translateX(${event.clientX}px)
+    translateY(${event.clientY}px)
+  `
 }
 
 function showMousePosition(event) {
