@@ -11,7 +11,7 @@ function moveBanner(event) {
 }
 
 function showMousePosition(event) {
-  mousePosition.textContent = `x: ${event.clientX}, y: ${event.clientX}`
+  mousePosition.textContent = `x: ${event.clientX}, y: ${event.clientY}`
 }
 
 document.addEventListener('mousemove', moveBanner)
