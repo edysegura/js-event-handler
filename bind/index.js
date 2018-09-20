@@ -6,6 +6,11 @@ class NameField {
 
 class NameGenerator {
   constructor() {
+    this.loadNames()
+    this.listenButtonClickEvent()
+  }
+
+  loadNames() {
     this.names = [
       'Cloud Strife',
       'Tifa Lockhart',
@@ -18,12 +23,12 @@ class NameGenerator {
       'Cait Sith',
       'Cid Highwind'
     ]
-    this.addButtonListener()
   }
 
-  addButtonListener() {
+  listenButtonClickEvent() {
     const button = document.querySelector('button')
-    button.addEventListener('click', this.addName.bind(this))
+    // button.addEventListener('click', this.addName.bind(this))
+    button.addEventListener('click', event => this.addName(event))
   }
 
   addName() {
