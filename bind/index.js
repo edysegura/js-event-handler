@@ -13,6 +13,7 @@ class HtmlService {
 
 class NameGenerator {
   constructor() {
+    this.index = 0
     this.loadNames()
     this.listenButtonClickEvent()
   }
@@ -39,7 +40,8 @@ class NameGenerator {
   }
 
   addName() {
-    new HtmlService(this.names.pop())
+    new HtmlService(this.names[ this.index ])
+    this.index = ++this.index % this.names.length
   }
 }
 
