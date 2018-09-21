@@ -1,6 +1,13 @@
-class NameField {
+class HtmlService {
   constructor(name) {
-    console.log('name', name)
+    this.addName(name)
+  }
+
+  addName(name) {
+    const listItem = document.createElement('li')
+    const list = document.querySelector('#names')
+    listItem.textContent = name
+    list.appendChild(listItem)
   }
 }
 
@@ -27,12 +34,12 @@ class NameGenerator {
 
   listenButtonClickEvent() {
     const button = document.querySelector('button')
-    // button.addEventListener('click', this.addName.bind(this))
     button.addEventListener('click', event => this.addName(event))
+    // button.addEventListener('click', this.addName.bind(this))
   }
 
   addName() {
-    new NameField(this.names.pop())
+    new HtmlService(this.names.pop())
   }
 }
 
